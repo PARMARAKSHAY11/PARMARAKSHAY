@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<style>
+      body
+           {
+            margin: 0;
+            height: 100vh;
+            background:linear-gradient(160deg,#ddff32,#2814ff);
+            background-repeat: none;
+            background-position: center;
+            background-size: cover;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+           }
+            fieldset
+           {
+            height: 420px;
+            width: 500px;
+           }
+           #a
+           {
+            font-size: 40px;
+            color: rgb(24, 4, 81);
+           }
+           
+
+</style>
+<body>
+    <fieldset>
+    <form onsubmit="alert('Your Sign in was successful.')">
+        <br>
+        <center><label id="a">Sign in</label></center>
+        <br>
+        <label>NAME :</label>&nbsp;&nbsp;<input type="text" required style="border-radius: 10px;height: 42px;width: 200px;background-color: transparent;border-color: azure;">
+        <br><br>
+        <label>E-Mail :</label>&nbsp;&nbsp;<input type="email" required style="border-radius: 10px;height: 42px;width: 200px;background-color: transparent;border-color: azure;">
+        <br><br>
+        <label>Password :</label>&nbsp;&nbsp;<input type="password" required style="border-radius: 10px;height: 42px;width: 200px;background-color: transparent;border-color: azure;">
+        <br><br>
+        <label>Confirm Password :</label>&nbsp;&nbsp;<input type="password" required style="border-radius: 10px;height: 42px;width: 200px;background-color: transparent;border-color: azure;">
+        <br><br><br>
+        <input type="submit" name="submit" value="Sign in" style="height:45px;width: 190px;background-color: transparent;border-radius: 10px;border-color: azure;font-size: 20px;font-family: cursive;color: azure;" >
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="reset" style="height:45px;width: 190px;background-color: transparent;border-radius: 10px;border-color: azure;font-size: 20px;font-family: cursive;color: azure;">
+        </form>
+        <script>
+            function valid(){
+                let user=document.getElementsById('username').value;
+                let pass=document.getElementsById('password').value;
+                if(user==="")
+            {
+                alert("Please enter the value");
+            }
+                 if(pass==="")
+                    {
+                        alert("Please enter the value");
+                    }
+                    if(pass!=cmpass)
+                    {
+                        alert("Please enter same password");
+                        return false;
+                    }
+                 
+            }
+            </script>
+    </fieldset>
+</body>
+</html>
